@@ -1,21 +1,17 @@
 
 var container, stats;
 
-init();
 start();
 
-function init() {
-    stats = new Stats();
-    container.appendChild( stats.dom );
-}
 
 function start(){
     // performance monitor
 container = document.createElement( 'div' );
+console.log(container);
 document.body.appendChild( container );
-alert('test');
+stats = new Stats();
+stats.showPanel( 1 );
+    container.appendChild( stats.dom );
 }
-
-
 
 

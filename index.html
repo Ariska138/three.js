@@ -15,38 +15,7 @@
 	<body>
         <script src="build/three.js"></script>
         <script src="js/gameplay.js"></script>
-        <script src="libs/stats.min.js"></script>
+        <!-- <script src="libs/stats.min.js"></script> -->
         <!-- <script src="js/monitor.js"></script> -->
-        <script>
-
-            
-        var container, stats;
-       
-       window.onload = function() {
-       
-
-init();
-start();
-
-
-
-             }
-
-
-function init() {
-    stats = new Stats();
-    container.appendChild( stats.dom );
-}
-
-function start(){
-    // performance monitor
-container = document.createElement( 'div' );
-console.log(container);
-document.body.appendChild( container );
-alert('test');
-}
-
-
-        </script>
 	</body>
 </html>
